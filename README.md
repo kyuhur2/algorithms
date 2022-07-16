@@ -32,9 +32,15 @@ Solutions to 150 problems available on [neetcode.io](https://neetcode.io)
 
 # Set Up - Python
 
-> conda create -n algorithms python=3.X -y
-> conda activate algorithms
-> pip install black
-> pip install flake8
-> pip install pre-commit
-> pip install -e .
+Requires Anaconda, Python=3.X.
+
+    conda create -n algorithms python=3.X -y
+    conda activate algorithms
+    pip install black
+    pip install flake8
+    pip install pre-commit
+    pip install -e .
+
+# Set Up - JavaScript
+
+Requires NodeJS.
