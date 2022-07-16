@@ -4,10 +4,10 @@ Solutions to 150 problems available on [neetcode.io](https://neetcode.io)
 
 # Languages
 
-- Python
-- JavaScript
-- Java
-- C++
+- [Python](https://github.com/kyuhur2/algorithms/tree/main/Python/)
+- [JavaScript](https://github.com/kyuhur2/algorithms/tree/main/JavaScript/)
+- [Java](https://github.com/kyuhur2/algorithms/tree/main/Java/)
+- [C++](https://github.com/kyuhur2/algorithms/tree/main/C++/)
 
 # Patterns
 
