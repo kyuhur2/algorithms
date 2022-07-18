@@ -4,15 +4,24 @@ class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
         return len(set(nums)) == len(nums)
 
+
 if __name__ == "__main__":
-    test_cases = [
-        ([], True),
-        ([1, 2, 3], True),
-        ([1, 2, 3, 3], False),
-        ([-1, -1], False),
+    input_cases = [
+        [],
+        [1, 2, 3],
+        [1, 2, 3, 3],
+        [-1, -1],
     ]
-    test = Solution()
-    for input_1, result in test_cases:
-        assert test.containsDuplicate(input_1) == result
-        
-    print("All tests have passed.")
+    expected_outputs = [
+        True,
+        True,
+        False,
+        False
+    ]
+    solution = Solution()
+    for test_number, element in enumerate(zip(input_cases, expected_outputs)):
+        input_case, expected_output = element
+        if (solution.containsDuplicate(input_case) == expected_output):
+            print(f"Test {test_number}: Passed.")
+        else:
+            print(f"Test {test_number}: Failed.")

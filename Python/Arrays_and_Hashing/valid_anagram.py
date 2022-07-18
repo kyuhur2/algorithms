@@ -14,14 +14,23 @@ class Solution:
         return sDict == tDict
 
 if __name__ == "__main__":
-    test_cases = [
-        ("", "", True),
-        ("abba", "bbaa", True),
-        ("abc", "abcd", False),
-        ("abc", "acd", False),
+    input_cases = [
+        ("", ""),
+        ("abba", "bbaa"),
+        ("abc", "abcd"),
+        ("abc", "acd")
     ]
-    test = Solution()
-    for input_1, input_2, result in test_cases:
-        assert test.isAnagram(input_1, input_2) == result
-        
-    print("All tests have passed.")
+    expected_outputs = [
+        True,
+        True,
+        False,
+        False
+    ]
+    solution = Solution()
+    for test_number, element in enumerate(zip(input_cases, expected_outputs)):
+        inputs, result = element
+        input_1, input_2 = inputs
+        if (solution.isAnagram(input_1, input_2) == result):
+            print(f"Test {test_number}: Passed.")
+        else:
+            print(f"Test {test_number}: Failed.")
