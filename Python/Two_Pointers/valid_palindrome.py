@@ -5,11 +5,11 @@ class Solution:
             if not s[start].isalnum():
                 start += 1
                 continue
-            
+
             if not s[end].isalnum():
                 end -= 1
                 continue
-            
+
             if s[start].lower() != s[end].lower():
                 return False
             start += 1
@@ -25,17 +25,11 @@ if __name__ == "__main__":
         "12f12s",
         "41",
     ]
-    expected_outputs = [
-        True,
-        True,
-        True,
-        False,
-        False
-    ]
+    expected_outputs = [True, True, True, False, False]
     solution = Solution()
     for test_number, element in enumerate(zip(input_cases, expected_outputs)):
         input_case, expected_output = element
-        if (solution.isPalindrome(input_case) == expected_output):
+        if solution.isPalindrome(input_case) == expected_output:
             print(f"Test {test_number}: Passed.")
         else:
             print(f"Test {test_number}: Failed.")
