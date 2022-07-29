@@ -12,11 +12,11 @@ class Solution:
 
 if __name__ == "__main__":
     input_cases = [2, 3, 5]
-    expected_outputs = [2, 3, 8]
+    output_cases = [2, 3, 8]
     solution = Solution()
-    for test_number, element in enumerate(zip(input_cases, expected_outputs)):
-        input_case, expected_output = element
-        if solution.climbStairs(input_case) == expected_output:
+    for test_number, element in enumerate(zip(input_cases, output_cases)):
+        input_case, output_case = element
+        if solution.climbStairs(input_case) == output_case:
             print(f"Test {test_number}: Passed.")
         else:
             print(f"Test {test_number}: Failed.")

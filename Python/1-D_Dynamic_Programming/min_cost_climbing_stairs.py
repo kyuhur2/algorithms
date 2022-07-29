@@ -17,11 +17,11 @@ class Solution:
 
 if __name__ == "__main__":
     input_cases = [[], [1], [10, 15, 20], [1, 100, 1, 1, 1, 100, 1, 1, 100, 1]]
-    expected_outputs = [-1, 1, 15, 6]
+    output_cases = [-1, 1, 15, 6]
     solution = Solution()
-    for test_number, element in enumerate(zip(input_cases, expected_outputs)):
-        input_case, expected_output = element
-        if solution.minCostClimbingStairs(input_case) == expected_output:
+    for test_number, element in enumerate(zip(input_cases, output_cases)):
+        input_case, output_case = element
+        if solution.minCostClimbingStairs(input_case) == output_case:
             print(f"Test {test_number}: Passed.")
         else:
             print(f"Test {test_number}: Failed.")
