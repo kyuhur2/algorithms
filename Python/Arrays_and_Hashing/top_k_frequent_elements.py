@@ -19,12 +19,12 @@ class Solution:
 
 if __name__ == "__main__":
     input_cases = [([1, 1, 1, 2, 2, 3], 2), ([1], 1), ([], 0)]
-    expected_outputs = [[1, 2], [1], []]
+    output_cases = [[1, 2], [1], []]
     solution = Solution()
-    for test_number, element in enumerate(zip(input_cases, expected_outputs)):
-        input_case, expected_output = element
+    for test_number, element in enumerate(zip(input_cases, output_cases)):
+        input_case, output_case = element
         input_1, input_2 = input_case
-        if solution.topKFrequent(input_1, input_2) == expected_output:
+        if solution.topKFrequent(input_1, input_2) == output_case:
             print(f"Test {test_number}: Passed.")
         else:
             print(f"Test {test_number}: Failed.")

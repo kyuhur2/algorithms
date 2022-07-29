@@ -19,12 +19,12 @@ if __name__ == "__main__":
         ([-1, 0, 5, -2], -3),
         ([0, 1, 2, 3, 0], 0),
     ]
-    expected_outputs = [[0, 2], [2, 3], [0, 3], [0, 4]]
+    output_cases = [[0, 2], [2, 3], [0, 3], [0, 4]]
     solution = Solution()
-    for test_number, element in enumerate(zip(input_cases, expected_outputs)):
-        inputs, result = element
-        input_1, input_2 = inputs
-        if solution.twoSum(input_1, input_2) == result:
+    for test_number, element in enumerate(zip(input_cases, output_cases)):
+        input_case, output_case = element
+        input_1, input_2 = input_case
+        if solution.twoSum(input_1, input_2) == output_case:
             print(f"Test {test_number}: Passed.")
         else:
             print(f"Test {test_number}: Failed.")

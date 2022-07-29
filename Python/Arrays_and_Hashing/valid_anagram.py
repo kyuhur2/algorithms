@@ -17,12 +17,12 @@ class Solution:
 
 if __name__ == "__main__":
     input_cases = [("", ""), ("abba", "bbaa"), ("abc", "abcd"), ("abc", "acd")]
-    expected_outputs = [True, True, False, False]
+    output_cases = [True, True, False, False]
     solution = Solution()
-    for test_number, element in enumerate(zip(input_cases, expected_outputs)):
-        inputs, result = element
-        input_1, input_2 = inputs
-        if solution.isAnagram(input_1, input_2) == result:
+    for test_number, element in enumerate(zip(input_cases, output_cases)):
+        input_case, output_case = element
+        input_1, input_2 = input_case
+        if solution.isAnagram(input_1, input_2) == output_case:
             print(f"Test {test_number}: Passed.")
         else:
             print(f"Test {test_number}: Failed.")
