@@ -13,7 +13,6 @@ class Solution:
 
 
 if __name__ == "__main__":
-    print("two_sum")
     input_cases = [
         ([1, 2, 3], 4),
         ([1, 2, 3, 4], 7),
@@ -29,4 +28,3 @@ if __name__ == "__main__":
             print("\033[92m {}\033[00m".format("."), end=" ")
         else:
             print("\033[91m {}\033[00m".format("F"), end=" ")
-    print("\n")

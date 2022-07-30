@@ -18,7 +18,6 @@ class Solution:
 
 
 if __name__ == "__main__":
-    print("top_k_frequent_elements")
     input_cases = [([1, 1, 1, 2, 2, 3], 2), ([1], 1), ([], 0)]
     output_cases = [[1, 2], [1], []]
     solution = Solution()
@@ -29,4 +28,3 @@ if __name__ == "__main__":
             print("\033[92m {}\033[00m".format("."), end=" ")
         else:
             print("\033[91m {}\033[00m".format("F"), end=" ")
-    print("\n")

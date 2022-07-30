@@ -16,7 +16,6 @@ class Solution:
 
 
 if __name__ == "__main__":
-    print("valid_anagram")
     input_cases = [("", ""), ("abba", "bbaa"), ("abc", "abcd"), ("abc", "acd")]
     output_cases = [True, True, False, False]
     solution = Solution()
@@ -27,4 +26,3 @@ if __name__ == "__main__":
             print("\033[92m {}\033[00m".format("."), end=" ")
         else:
             print("\033[91m {}\033[00m".format("F"), end=" ")
-    print("\n")
