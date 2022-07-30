@@ -17,7 +17,6 @@ class Solution:
 
 
 if __name__ == "__main__":
-    print("container_with_most_water")
     input_cases = [[1, 8, 6, 2, 5, 4, 8, 3, 7], [1, 1], []]
     output_cases = [49, 1, 0]
     solution = Solution()
@@ -27,4 +26,3 @@ if __name__ == "__main__":
             print("\033[92m {}\033[00m".format("."), end=" ")
         else:
             print("\033[91m {}\033[00m".format("F"), end=" ")
-    print("\n")
