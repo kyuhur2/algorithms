@@ -18,6 +18,7 @@ class Solution:
 
 
 if __name__ == "__main__":
+    print("valid palindrome")
     input_cases = [
         "aba",
         "1",
@@ -30,6 +31,7 @@ if __name__ == "__main__":
     for test_number, element in enumerate(zip(input_cases, expected_outputs)):
         input_case, expected_output = element
         if solution.isPalindrome(input_case) == expected_output:
-            print(f"Test {test_number}: Passed.")
+            print("\033[92m {}\033[00m".format("."), end=" ")
         else:
-            print(f"Test {test_number}: Failed.")
+            print("\033[91m {}\033[00m".format("F"), end=" ")
+    print("\n")
