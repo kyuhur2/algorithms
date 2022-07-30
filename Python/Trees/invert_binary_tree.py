@@ -16,7 +16,6 @@ class Solution:
 
 
 if __name__ == "__main__":
-    print("invert_binary_tree")
     # input case 1
     tree1 = TreeNode(4)
     tree1.left = TreeNode(2)
@@ -56,4 +55,3 @@ if __name__ == "__main__":
             print("\033[92m {}\033[00m".format("."), end=" ")
         else:
             print("\033[91m {}\033[00m".format("F"), end=" ")
-    print("\n")
