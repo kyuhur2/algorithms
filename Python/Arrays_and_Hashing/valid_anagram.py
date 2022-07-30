@@ -16,6 +16,7 @@ class Solution:
 
 
 if __name__ == "__main__":
+    print("valid_anagram")
     input_cases = [("", ""), ("abba", "bbaa"), ("abc", "abcd"), ("abc", "acd")]
     output_cases = [True, True, False, False]
     solution = Solution()
@@ -23,6 +24,7 @@ if __name__ == "__main__":
         input_case, output_case = element
         input_1, input_2 = input_case
         if solution.isAnagram(input_1, input_2) == output_case:
-            print(f"Test {test_number}: Passed.")
+            print("\033[92m {}\033[00m".format("."), end=" ")
         else:
-            print(f"Test {test_number}: Failed.")
+            print("\033[91m {}\033[00m".format("F"), end=" ")
+    print("\n")

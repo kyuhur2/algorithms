@@ -18,6 +18,7 @@ class Solution:
 
 
 if __name__ == "__main__":
+    print("top_k_frequent_elements")
     input_cases = [([1, 1, 1, 2, 2, 3], 2), ([1], 1), ([], 0)]
     output_cases = [[1, 2], [1], []]
     solution = Solution()
@@ -25,6 +26,7 @@ if __name__ == "__main__":
         input_case, output_case = element
         input_1, input_2 = input_case
         if solution.topKFrequent(input_1, input_2) == output_case:
-            print(f"Test {test_number}: Passed.")
+            print("\033[92m {}\033[00m".format("."), end=" ")
         else:
-            print(f"Test {test_number}: Failed.")
+            print("\033[91m {}\033[00m".format("F"), end=" ")
+    print("\n")
