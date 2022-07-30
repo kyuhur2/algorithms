@@ -6,8 +6,8 @@ Solutions to 150 problems available on [neetcode.io](https://neetcode.io)
 
 - [Python](https://github.com/kyuhur2/algorithms/tree/main/Python/)
 - [JavaScript](https://github.com/kyuhur2/algorithms/tree/main/JavaScript/)
-- [Java](https://github.com/kyuhur2/algorithms/tree/main/Java/)
-- [C++](https://github.com/kyuhur2/algorithms/tree/main/C++/)
+- [Java](https://github.com/kyuhur2/algorithms/tree/main/Java/) (Soon)
+- [C++](https://github.com/kyuhur2/algorithms/tree/main/C++/) (Soon)
 
 # Patterns
 
