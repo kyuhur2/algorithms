@@ -14,7 +14,6 @@ class Solution:
 
 
 if __name__ == "__main__":
-    print("longest_substring_without_repeating_characters")
     input_cases = ["abcabcbb", "bbbbb", "pwwkew", ""]
     output_cases = [3, 1, 3, 0]
     solution = Solution()
@@ -24,4 +23,3 @@ if __name__ == "__main__":
             print("\033[92m {}\033[00m".format("."), end=" ")
         else:
             print("\033[91m {}\033[00m".format("F"), end=" ")
-    print("\n")

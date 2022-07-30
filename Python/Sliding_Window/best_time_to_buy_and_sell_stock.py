@@ -14,7 +14,6 @@ class Solution:
 
 
 if __name__ == "__main__":
-    print("best_time_to_buy_and_sell_stock")
     input_cases = [[7, 1, 5, 3, 6, 4], [7, 6, 4, 3, 1], [1, 2]]
     output_cases = [5, 0, 1]
     solution = Solution()
@@ -24,4 +23,3 @@ if __name__ == "__main__":
             print("\033[92m {}\033[00m".format("."), end=" ")
         else:
             print("\033[91m {}\033[00m".format("F"), end=" ")
-    print("\n")
