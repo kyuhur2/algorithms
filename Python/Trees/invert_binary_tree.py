@@ -16,6 +16,7 @@ class Solution:
 
 
 if __name__ == "__main__":
+    print("invert_binary_tree")
     # input case 1
     tree1 = TreeNode(4)
     tree1.left = TreeNode(2)
@@ -52,6 +53,7 @@ if __name__ == "__main__":
         if inOrderTraversal(solution.invertTree(input_case)) == inOrderTraversal(
             output_case
         ):
-            print(f"Test {test_number}: Passed.")
+            print("\033[92m {}\033[00m".format("."), end=" ")
         else:
-            print(f"Test {test_number}: Failed.")
+            print("\033[91m {}\033[00m".format("F"), end=" ")
+    print("\n")
