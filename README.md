@@ -30,7 +30,7 @@ Solutions to 150 problems available on [neetcode.io](https://neetcode.io)
 - Math & Geometry
 - Bit Manipulation
 
-# Set Up - Python
+# Python
 
 Requires Anaconda, Python=3.X.
 
@@ -40,6 +40,8 @@ Requires Anaconda, Python=3.X.
     pip install flake8
     pip install pre-commit
     pip install -e .
+
+Execute `test_all.bat` in the `Python` parent file to test all algorithms.
 
 # Set Up - JavaScript
 
