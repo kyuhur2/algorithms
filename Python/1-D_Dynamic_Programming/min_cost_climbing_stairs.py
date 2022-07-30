@@ -16,7 +16,6 @@ class Solution:
 
 
 if __name__ == "__main__":
-    print("min_cost_climbing_stairs")
     input_cases = [[], [1], [10, 15, 20], [1, 100, 1, 1, 1, 100, 1, 1, 100, 1]]
     output_cases = [-1, 1, 15, 6]
     solution = Solution()
@@ -26,4 +25,3 @@ if __name__ == "__main__":
             print("\033[92m {}\033[00m".format("."), end=" ")
         else:
             print("\033[91m {}\033[00m".format("F"), end=" ")
-    print("\n")

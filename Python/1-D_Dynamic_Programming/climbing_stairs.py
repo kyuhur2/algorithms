@@ -11,7 +11,6 @@ class Solution:
 
 
 if __name__ == "__main__":
-    print("climbing_stairs")
     input_cases = [2, 3, 5]
     output_cases = [2, 3, 8]
     solution = Solution()
@@ -21,4 +20,3 @@ if __name__ == "__main__":
             print("\033[92m {}\033[00m".format("."), end=" ")
         else:
             print("\033[91m {}\033[00m".format("F"), end=" ")
-    print("\n")
