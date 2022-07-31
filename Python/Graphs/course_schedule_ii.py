@@ -3,33 +3,33 @@ from typing import List
 
 class Solution:
     def findOrder(self, numCourses: int, prerequisites: List[List[int]]) -> List[int]:
-        visited = set()
-        cycle = set()
-        result = []
-        adjList = {i: [] for i in range(numCourses)}
+        self.visited = set()
+        self.cycle = set()
+        self.result = []
+        self.adjList = {i: [] for i in range(numCourses)}
         for course, prereq in prerequisites:
-            adjList[course].append(prereq)
-
-        def dfs(course):
-            if course in cycle:
-                return False
-            if course in visited:
-                return True
-
-            cycle.add(course)
-            for prereq in adjList[course]:
-                if not dfs(prereq):
-                    return False
-
-            cycle.remove(course)
-            visited.add(course)
-            result.append(course)
-            return True
+            self.adjList[course].append(prereq)
 
         for course in range(numCourses):
-            if not dfs(course):
+            if not self.dfs(course):
                 return []
-        return result
+        return self.result
+    
+    def dfs(self, course: int):
+        if course in self.cycle:
+            return False
+        if course in self.visited:
+            return True
+
+        self.cycle.add(course)
+        for prereq in self.adjList[course]:
+            if not self.dfs(prereq):
+                return False
+
+        self.cycle.remove(course)
+        self.visited.add(course)
+        self.result.append(course)
+        return True
 
 
 if __name__ == "__main__":
